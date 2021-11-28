@@ -15,7 +15,8 @@ function ShoppingList() {
                 plantList
                 .sort((plant1, plant2) => ( plant1.name.localeCompare(plant2.name) ))
                 .map((plant) => ( 
-                    <PlantItem
+                    <PlantItem 
+                        key={plant.id}
                         id={plant.id}
                         name={plant.name}
                         cover={plant.cover}
