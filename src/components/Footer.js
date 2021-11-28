@@ -14,7 +14,7 @@ function Footer() {
 				Pour les passionné·e·s de plantes 🌿🌱🌵
 			</div>
 			<div className='tjh-footer-elem'>
-				<label for='email-address' >Laissez-nous votre mail :</label>
+				<label htmlFor='email-address' >Laissez-nous votre mail :</label>
 				<input type='text' name='email-address' defaultValue={inputValue} onChange={(e) => setInputValue(e.target.value)} onBlur={ (e) => { handleBlur(e.target.value) }}/>
     			<button onClick={() => alert(inputValue)}>Alertez moi 🚨</button>
 			</div>
