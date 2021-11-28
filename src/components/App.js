@@ -1,4 +1,3 @@
-import '../App.css';
 import Banner from './Banner.js'
 import Cart from "./Cart.js";
 
