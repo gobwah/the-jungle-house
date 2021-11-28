@@ -1,4 +1,5 @@
 import '../styles/ShoppingList.css'
+import PlantItem from './PlantItem';
 import { plantList } from '../data/plantList'
 
 function ShoppingList() {
@@ -14,11 +15,13 @@ function ShoppingList() {
                 plantList
                 .sort((plant1, plant2) => ( plant1.name.localeCompare(plant2.name) ))
                 .map((plant) => ( 
-                    <li key={`${plant.id}`} className='tjh-plant-item'>
-                        {plant.name}
-                        {plant.isBestSale && <span>🔥</span>}
-                        {plant.isSpecialOffer && <span className='tjh-sales'>On sales</span>}
-                    </li>
+                    <PlantItem
+                        id={plant.id}
+                        name={plant.name}
+                        cover={plant.cover}
+                        light={plant.light}
+                        water={plant.water}
+                    />
                 )).sort()
                 }
             </ul>
