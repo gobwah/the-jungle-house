@@ -25,13 +25,13 @@ function Cart({ cart, updateCart }) {
 					<h2>Cart</h2>
 					<ul>
 						{cart.map(({ name, price, amount }, index) => (
-							<div key={`${name}-${index}`}>
+							<li key={`${name}-${index}`}>
 								{name} {price}$ x {amount}
-							</div>
+							</li>
 						))}
 					</ul>
-					<h3>Total :{total}$</h3>
-					<button onClick={() => updateCart([])}>Empty cart</button>
+					<h3>Total: {total}$</h3>
+					<button className='tjh-empty-button' onClick={() => updateCart([])}>Empty cart</button>
 				</div>
 			) : (
 				<div>Your cart is empty</div>

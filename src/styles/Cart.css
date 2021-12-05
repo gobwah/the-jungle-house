@@ -23,6 +23,7 @@
 	padding: 0;
 	color: white;
 	align-self: flex-end;
+	text-decoration: underline;
 }
 
 .tjh-cart-closed {
@@ -32,4 +33,18 @@
 
 .tjh-cart-closed > button {
 	color: black;
+}
+
+.tjh-empty-button {
+	border: none;
+	border-radius: 10px;
+	background-color: white;
+	color: #31b472;
+	padding: 10px 15px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.tjh-empty-button:hover {
+	background-color: #d7fae8;
 }

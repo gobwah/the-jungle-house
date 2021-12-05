@@ -5,4 +5,32 @@
 
 .tjh-categories-select {
 	margin-right: 15px;
+	text-transform: capitalize;
+	border: none;
+	border-radius: 10px;
+	background-color: #31b472;
+	color: white;
+	padding: 10px 15px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+.tjh-categories-select > option {
+	background-color: #3ad386;
+}
+
+.tjh-reset-button {
+	border: none;
+	border-radius: 10px;
+	background-color: #31b472;
+	color: white;
+	padding: 10px 15px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+.tjh-reset-button:hover {
+	background-color: #3ad386;
 }
