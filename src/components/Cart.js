@@ -9,7 +9,7 @@ function Cart({ cart, updateCart }) {
 	)
 
     useEffect(() => {
-		document.title = `LMJ: ${total}€ d'achats`
+		document.title = `TJH: Cart ${total}$`
 	}, [total])
 
 	return isOpen ? (
@@ -18,23 +18,23 @@ function Cart({ cart, updateCart }) {
 				className='tjh-cart-toggle-button'
 				onClick={() => setIsOpen(false)}
 			>
-				Fermer
+				Close
 			</button>
 			{cart.length > 0 ? (
 				<div>
-					<h2>Panier</h2>
+					<h2>Cart</h2>
 					<ul>
 						{cart.map(({ name, price, amount }, index) => (
 							<div key={`${name}-${index}`}>
-								{name} {price}€ x {amount}
+								{name} {price}$ x {amount}
 							</div>
 						))}
 					</ul>
-					<h3>Total :{total}€</h3>
-					<button onClick={() => updateCart([])}>Vider le panier</button>
+					<h3>Total :{total}$</h3>
+					<button onClick={() => updateCart([])}>Empty cart</button>
 				</div>
 			) : (
-				<div>Votre panier est vide</div>
+				<div>Your cart is empty</div>
 			)}
 		</div>
 	) : (
@@ -43,7 +43,7 @@ function Cart({ cart, updateCart }) {
 				className='tjh-cart-toggle-button'
 				onClick={() => setIsOpen(true)}
 			>
-				Ouvrir le Panier
+				Open cart
 			</button>
 		</div>
 	)

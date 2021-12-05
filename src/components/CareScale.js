@@ -3,8 +3,8 @@ import Water from '../assets/water.svg'
 
 function handleClick(e, scaleValue, careType) {
 	e.stopPropagation()
-	const range = ['peu', 'modérément', 'beaucoup']
-	alert(`Cette plante requiert ${range[scaleValue-1]} ${careType === 'light' ? 'de lumière' : "d'arrosage"}`)
+	const range = ['few', 'moderately', 'a lot of']
+	alert(`This plant needs ${range[scaleValue-1]} ${careType === 'light' ? 'light' : "water"}`)
 }
 
 function CareScale({ scaleValue, careType }) {

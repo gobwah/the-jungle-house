@@ -10,18 +10,18 @@ function Footer() {
 
 	function handleBlur() {
 		if (!inputValue.includes('@')) {
-			alert("Attention, il n'y a pas d'@, ceci n'est pas une adresse valide 😥")
+			alert("There is no '@' in your email address 😥")
 		}
 	}
 
 	return (
 		<footer className='tjh-footer'>
 			<div className='tjh-footer-elem'>
-				Pour les passionné·e·s de plantes 🌿🌱🌵
+				For enthusiasts 🌿🌱🌵
 			</div>
-			<div className='tjh-footer-elem'>Laissez-nous votre mail :</div>
+			<div className='tjh-footer-elem'>Give us your email address :</div>
 			<input
-				placeholder='Entrez votre mail'
+				placeholder='Enter your email address'
 				onChange={handleInput}
 				value={inputValue}
 				onBlur={handleBlur}
