@@ -9,7 +9,7 @@ function Footer() {
 	}
 
 	function handleBlur() {
-		if (!inputValue.includes('@')) {
+		if (typeof inputValue === 'string' && inputValue.trim() && !inputValue.includes('@')) {
 			alert("There is no '@' in your email address 😥")
 		}
 	}
